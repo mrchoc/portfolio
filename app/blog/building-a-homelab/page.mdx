@@ -1,0 +1,83 @@
+export const metadata = {
+  title: 'Building a homelab as a broke college student',
+  description:
+    'A deep dive into the why and how of getting into homelabbing',
+  alternates: {
+    canonical: '/blog/building-a-homelab',
+  },
+};
+
+<Cover
+  src="/homelab-optiplex-internals.png"
+  alt="Internals of an Optiplex Micro"
+  caption="The internals of an Optiplex Micro, one of the mini PCs in my server"
+  width={280}
+/>
+
+# Building a homelab as a broke college student
+
+Decided to jot down my thought process and journey of building my homelab as a college student.
+
+## What is a homelab?
+
+According to stormagic.com, "A homelab is a personal, isolated IT environment in your home, used for experimenting with hardware and software like servers, networking, and virtualization without affecting your main systems, acting as a safe sandbox for learning, testing new tech, self-hosting services (media, games, ad-blocking), and building practical skills for IT careers".
+
+To me, it's a place to [FAFO](https://www.urbandictionary.com/define.php?term=FAFO) without the consequences of finding out.
+
+## Motivations
+
+Considering how expensive and time-consuming building a homelab could potentially be, you might be wondering if I have a good reason for getting into it. (I don't)
+
+It was a combination of a few things:
+- I was previously using a Raspberry Pi to run Home Assistant, but that was about all it could run before severely throttling. I wanted to run more.
+- Wanting a playground where I could mess with new tech. Especially without needing to wait for the opportunity to be bestowed upon me via an internship.
+- I spent too much time on r/homelab.
+
+## Process
+
+### Sourcing for parts
+
+Looking for the necessary components for my homelab was one of the most nerve-racking parts of this project. Since there's surprisingly little centralized information on how to actually start, YouTubers like [Jeff Geerling](https://www.youtube.com/@JeffGeerling) and forums like r/homelab were invaluable resources for a beginner like me.
+
+One major hurdle I set for myself was wanting to build a custom NAS by combining an Optiplex Micro, a bunch of hard drives, and an M.2 to SATA converter. I was determined to stick to the 10-inch form factor of a 'mini lab' while keeping the drives modular. Of course, the sane way to add a NAS would be to just buy a prebuilt unit and chuck it under everything else, as shown below.
+
+<Cover
+  src="/homelab-example.png"
+  alt="Image from reddit user u/zarderxio"
+  caption="Credits to u/zarderxio on r/homelab"
+  width={240}
+/>
+
+But I just had to do things the hard way.
+
+### Assembling everything
+
+After getting most of my parts from Aliexpress, it was time to put it all together and hope for the best. This was by far the most stressful part of the whole project — spending a few hundred dollars on different components and trusting that they'll all work together just like the internet people said they would. 
+
+<Cover
+  src="/homelab-wiring.png"
+  alt="Image of the wiring of a home server"
+  caption="Cable management? What's that?"
+  width={280}
+/>
+
+The assembly was not as smooth sailing as I had hoped. There were multiple issues where the mini PC was not reading the drives through the converter, which sent me into a spiral of pinpointing the root cause. Was the converter cooked? Was the mini PC incompatible? Should I have just scrapped the whole custom NAS idea like a normal person?
+
+Thankfully, after some research and troubleshooting, I found the specific configuration changes I needed and everything booted up! I didn't waste $200!
+
+### The insides
+
+Alas, figuring out the OS and virtualisation was a whole other beast. I fought with DNS failures, Proxmox cluster connectivity, and circular mount dependencies, among a multitude of other software issues. On the bright side, however, finding solutions online was much easier. These problems were far more common than my weird hardware issues.
+
+## Reflections
+
+I have finally reached a point where my homelab has stopped giving me frequent issues and has provided me sufficient emotional stability to write about it. Despite the trials and tribulations that this project had put me through, I would still do it all over again. 
+
+The feeling of figuring stuff out while having absolutely no idea what I'm doing is indescribable. I’ve learned much more from this project than I ever would have from an internship, which makes all the time and money spent feel worthwhile in the end. If you’re looking to start a project like this for your resume, my advice is to manage your expectations: your mileage will vary heavily depending on the interviewer.
+
+<Cover
+  src="/homelab.png"
+  alt="Image of a home server"
+  caption="The fruits of my labour. It ain't much but it's mine."
+  width={280}
+/>
