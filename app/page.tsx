@@ -20,8 +20,6 @@ import {
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
-import Image from 'next/image'
-import { Skeleton } from "@/components/ui/skeleton"
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
