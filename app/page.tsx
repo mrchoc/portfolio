@@ -196,7 +196,7 @@ export default function Personal() {
                       {job.title}
                     </h4>
                     ) : (
-                    <div className='h-4 w-[160px] bg-zinc-700 rounded-md animate-pulse duration-2000 mb-2'></div>
+                    <div className='h-4 w-[160px] bg-zinc-200 dark:bg-zinc-700 rounded-md animate-pulse duration-2000 mb-2'></div>
                     )
                     }
                     <p className="text-zinc-500 dark:text-zinc-400">
@@ -208,7 +208,7 @@ export default function Personal() {
                     {job.start}
                   </p>
                   ) : (
-                  <div className='h-4 w-[36.44px] bg-zinc-700 rounded-md animate-pulse duration-2000'></div>
+                  <div className='h-4 w-[36.44px] bg-zinc-200 dark:bg-zinc-700 rounded-md animate-pulse duration-2000'></div>
                   )
                   }
                 </div>
