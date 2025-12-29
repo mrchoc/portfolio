@@ -65,7 +65,7 @@ function ProjectPoster({ src }: ProjectVideoProps) {
           <MorphingDialogImage
             src={src}
             alt='Cover image of project'
-            className='h-auto w-full max-w-[90vw] rounded-[4px] object-cover lg:h-[90vh]'
+            className='h-auto w-full max-w-[90vw] rounded-[4px] object-cover'
           />
         </MorphingDialogContent>
         <MorphingDialogClose
