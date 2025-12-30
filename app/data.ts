@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     description:
       'Building agentic workflows to automate configuration monitoring and remediation',
     link: 'https://github.com/Config-Guardians',
-    image_url: '/project-1.png',
+    image_url: 'https://images.mrchoc.net/images/project-1.png',
     id: 'project1',
   },
 ]
