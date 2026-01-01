@@ -191,26 +191,16 @@ export default function Personal() {
               <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
                 <div className="relative flex w-full flex-row justify-between">
                   <div>
-                    {job.company !== "Apple Inc." ? (
                     <h4 className="font-normal dark:text-zinc-100">
                       {job.title}
                     </h4>
-                    ) : (
-                    <div className='h-4 w-[160px] bg-zinc-200 dark:bg-zinc-700 rounded-md animate-pulse duration-2000 mb-2'></div>
-                    )
-                    }
                     <p className="text-zinc-500 dark:text-zinc-400">
                       {job.company}
                     </p>
                   </div>
-                  {job.company !== "Apple Inc." ? (
                   <p className="text-zinc-600 dark:text-zinc-400">
                     {job.start}
                   </p>
-                  ) : (
-                  <div className='h-4 w-[36.44px] bg-zinc-200 dark:bg-zinc-700 rounded-md animate-pulse duration-2000'></div>
-                  )
-                  }
                 </div>
               </div>
             </a>
