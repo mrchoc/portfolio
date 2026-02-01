@@ -5,6 +5,11 @@ Welcome to the source code for my personal portfolio! This is where I showcase m
 ## 🚀 Live Site
 Check it out here: [mrchoc.net](https://mrchoc.net)
 
+## 📋 Prerequisites
+- **Node.js:** v18 or later
+- **npm:** v9 or later
+- **Git:** For cloning and version control
+
 ## 🛠️ Tech Stack
 - **Framework:** [Next.js](https://nextjs.org/) (App Router)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
