@@ -84,7 +84,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ryan-loh-3400521b3',
+    link: 'https://www.linkedin.com/in/ryanlohjk',
   },
   {
     label: 'Resume',
