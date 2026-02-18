@@ -40,21 +40,21 @@ export const PROJECTS: Project[] = [
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Apple',
-    title: 'Site Reliability Engineer',
+    title: 'Site Reliability Engineer Intern',
     start: 'Present',
     link: 'https://apple.com',
     id: 'work1',
   },
   {
     company: 'Netvirta',
-    title: 'DevOps Engineer',
+    title: 'DevOps Engineer Intern',
     start: '2025',
     link: 'https://netvirta.com',
     id: 'work2',
   },
   {
     company: 'Ensign Infosecurity',
-    title: 'DevOps Engineer',
+    title: 'DevOps Engineer Intern',
     start: '2024',
     link: 'https://ensigninfosecurity.com/',
     id: 'work3',
